@@ -4,6 +4,7 @@
       <br />
        <%= link_to 'Preview As Student...', course_path(current_course), class: 'btn btn-warning float-right' %>
   <br class="clr" />
+     <%= image_tag current_course.image.to_s, class: 'img-fluid' %>
       <br class="clr" />
      <div class="text-center">
        <%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), class: 'btn btn-primary btn-lg' %>
