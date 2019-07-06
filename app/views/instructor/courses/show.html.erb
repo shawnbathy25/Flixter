@@ -50,7 +50,7 @@
                <ul class ="sections">
                   <% current_course.sections.rank(:row_order).each do |section| %>
                   <li data-update-url="<%= instructor_section_path section %>" class="section-li">
-                <div class="header">
+                <div class="header float-left">
                  <span class="fa fa-ellipsis-v"></span>
                     <%= section.title %>
               </div>
@@ -59,6 +59,8 @@
                       <button type="button" class="btn btn-primary btn-lg float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
                         New Lesson...
                       </button>
+
+
                   <br class="clr" />
                   <br class="clr" />
                    <ul class="lessons">
