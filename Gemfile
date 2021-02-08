@@ -74,7 +74,7 @@ gem 'devise'
 
 gem 'simple_form'
 
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 gem "figaro"
 
